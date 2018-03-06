@@ -1,0 +1,12 @@
+.gallery {
+    .canvas {
+        .image {
+            &.portrait {
+                background-size : contain;
+            }
+            &.landscape {
+                background-size : cover;
+            }
+        }
+    }
+}

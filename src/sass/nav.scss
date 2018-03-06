@@ -1,0 +1,54 @@
+.nav {
+    background      : #fff;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+
+    .social {
+        align-self     : center;
+        display        : flex;
+        flex-direction : row;
+
+        .icon {
+            background : transparent center / contain no-repeat scroll;
+            display    : block;
+
+            & + .icon {
+                margin : auto auto auto 2vmin;
+
+            }
+            &.email {
+                background-image : url('/images/icon_mail.svg');
+                background-size  : 140%;
+            }
+            &.marker {
+                background-image : url('/images/icon_marker.svg');
+                background-size  : 140%;
+
+            }
+            &.instagram {
+                background-image : url('/images/icon_instagram.svg');
+                background-size  : 140%;
+            }
+            &.vk {
+                background-image : url('/images/icon_vk.png');
+                background-size  : 90%;
+            }
+        }
+    }
+    .locale {
+        align-self : center;
+
+        .language {
+            color          : #675191;
+            cursor         : pointer;
+            display        : block;
+            font-weight    : bold;
+            text-transform : uppercase;
+
+            &.-active {
+                display : none;
+            }
+        }
+    }
+}

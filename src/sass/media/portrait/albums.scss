@@ -1,0 +1,67 @@
+.albums {
+    .canvas {
+        display    : flex;
+        flex-wrap  : nowrap;
+        height     : 100%;
+        position   : relative;
+        transition : transform 0.3s ease-in;
+
+        .album {
+            height : 100%;
+            width  : 100vw;
+
+            .box {
+                height   : 100%;
+                overflow : hidden;
+
+                .cover {
+                    top       : 50%;
+                    transform : translateY(-50%);
+                }
+            }
+            .info {
+                box-sizing : border-box;
+                padding    : 0 0 0 11.11vmin;
+                width      : 100%;
+
+                .title {
+                    color     : #fff;
+                    font-size : 2.18vmax;
+                    margin    : 0;
+                    padding   : 3.43vmax 0 0 3.43vmax;
+                }
+                .description {
+                    background    : rgba(255, 255, 255, 0.5);
+                    border-radius : 3.12vmax 0 0 3.12vmax;
+                    box-sizing    : border-box;
+                    color         : #555;
+                    display       : block;
+                    font-size     : 1.56vmax;
+                    padding       : 1.87vmax 2.34vmax 1.87vmax 3.43vmax;
+                    width         : 100%;
+                }
+            }
+        }
+    }
+
+    .points {
+        bottom          : 1.56vmax;
+        display         : flex;
+        justify-content : center;
+        position        : absolute;
+        width           : 100vw;
+        z-index         : 1;
+
+        .point {
+            background    : #b498d0;
+            border-radius : 100%;
+            height        : 1.56vmax;
+            margin        : 0 1vmax;
+            width         : 1.56vmax;
+
+            &.-active {
+                background : #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.intro {
+    background      : transparent url('/images/bg_header.jpg') center / cover no-repeat scroll;
+    display         : flex;
+    justify-content : center;
+
+    .center {
+        align-self : flex-start;
+
+        h1 {
+            background  : transparent url('/images/img_title.svg') center / contain no-repeat scroll;
+            display     : block;
+            margin      : 0;
+            text-indent : -9999px;
+        }
+        .logo {
+            background : transparent url('/images/img_logo.svg') center / contain no-repeat scroll;
+            width      : 100%;
+        }
+        h2 {
+            font-weight    : 300;
+            letter-spacing : 0.1em;
+            margin         : 0;
+            text-align     : center;
+        }
+    }
+}

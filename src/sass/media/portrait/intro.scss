@@ -1,0 +1,19 @@
+.intro {
+    .center {
+        transform : translateY(5.78vmax);
+
+        h1 {
+            height      : 3.43vmax;
+            line-height : 3.43vmax;
+            min-width   : 27vmax;
+            width       : 100%;
+        }
+        .logo {
+            height : 3.43vmax;
+            margin : 1vmax 0;
+        }
+        h2 {
+            font-size : 1.56vmax;
+        }
+    }
+}

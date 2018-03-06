@@ -1,0 +1,131 @@
+# CORE
+Options -Indexes
+Options -MultiViews
+Options +FollowSymlinks
+AddDefaultCharset UTF-8
+ServerSignature Off
+FileETag none
+
+# DIRECTORY INDEX
+DirectoryIndex index.html
+
+# TIMEZONE
+SetEnv Europe/Berlin
+
+# REDIRECT
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTPS} off
+    RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ETAG
+<IfModule mod_headers.c>
+	Header unset ETag
+	#FileETag MTime Size
+</IfModule>
+
+# EXPIRES
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresDefault "access plus 1 month"
+
+	# CSS and JS expiration: 1 week after request
+	#ExpiresByType text/css "now plus 1 week"
+	#ExpiresByType application/javascript "now plus 1 week"
+	#ExpiresByType application/x-javascript "now plus 1 week"
+
+	# Image files expiration: 1 month after request
+	#ExpiresByType image/bmp "now plus 1 month"
+	#ExpiresByType image/gif "now plus 1 month"
+	#ExpiresByType image/jpeg "now plus 1 month"
+	#ExpiresByType image/jp2 "now plus 1 month"
+	#ExpiresByType image/pipeg "now plus 1 month"
+	#ExpiresByType image/png "now plus 1 month"
+	#ExpiresByType image/svg+xml "now plus 1 month"
+	#ExpiresByType image/tiff "now plus 1 month"
+	#ExpiresByType image/vnd.microsoft.icon "now plus 1 month"
+	#ExpiresByType image/x-icon "now plus 1 month"
+	#ExpiresByType image/ico "now plus 1 month"
+	#ExpiresByType image/icon "now plus 1 month"
+	#ExpiresByType text/ico "now plus 1 month"
+	#ExpiresByType application/ico "now plus 1 month"
+	#ExpiresByType image/vnd.wap.wbmp "now plus 1 month"
+	#ExpiresByType application/vnd.wap.wbxml "now plus 1 month"
+
+	#ExpiresByType application/smil "now plus 1 month"
+	# Audio files expiration: 1 month after request
+	#ExpiresByType audio/basic "now plus 1 month"
+	#ExpiresByType audio/mid "now plus 1 month"
+	#ExpiresByType audio/midi "now plus 1 month"
+	#ExpiresByType audio/mpeg "now plus 1 month"
+	#ExpiresByType audio/x-aiff "now plus 1 month"
+	#ExpiresByType audio/x-mpegurl "now plus 1 month"
+	#ExpiresByType audio/x-pn-realaudio "now plus 1 month"
+	#ExpiresByType audio/x-wav "now plus 1 month"
+
+	# Movie files expiration: 1 month after request
+	#ExpiresByType application/x-shockwave-flash "now plus 1 month"
+	#ExpiresByType x-world/x-vrml "now plus 1 month"
+	#ExpiresByType video/x-msvideo "now plus 1 month"
+	#ExpiresByType video/mpeg "now plus 1 month"
+	#ExpiresByType video/mp4 "now plus 1 month"
+	#ExpiresByType video/quicktime "now plus 1 month"
+	#ExpiresByType video/x-la-asf "now plus 1 month"
+	#ExpiresByType video/x-ms-asf "now plus 1 month"
+</IfModule>
+
+# MIME TYPES
+<IfModule mod_mime.c>
+	
+	# DEFAULTS
+	DefaultLanguage de
+	AddLanguage de-DE .html .css .js
+	AddCharset utf-8 .html .css .js .xml .json .rss .atom
+	
+	# JAVASCRIPT
+	AddType application/javascript js jsonp
+	AddType application/json json
+	
+	# FONTS
+	AddType font/opentype otf
+	AddType application/font-woff woff
+	AddType application/x-font-woff woff
+	AddType application/vnd.ms-fontobject eot
+	AddType application/x-font-ttf ttc ttf
+	#AddType image/svg+xml svg svgz
+	#AddEncoding gzip svgz
+	
+	# AUDIO
+	AddType audio/mp4 m4a f4a f4b
+	AddType audio/ogg oga ogg
+	
+	# VIDEO
+	AddType video/mp4 mp4 m4v f4v f4p
+	AddType video/ogg ogv
+	AddType video/webm webm
+	AddType video/x-flv flv
+	
+	# OTHERS
+	AddType application/octet-stream safariextz
+	AddType application/x-chrome-extension crx
+	AddType application/x-opera-extension oex
+	AddType application/x-shockwave-flash swf
+	AddType application/x-web-app-manifest+json webapp
+	AddType application/x-xpinstall xpi
+	AddType application/xml atom rdf rss xml
+	AddType application/vnd.openxmlformats .docx .pptx .xlsx .xltx . xltm .dotx .potx .ppsx
+	AddType text/cache-manifest appcache manifest
+	AddType text/vtt vtt
+	AddType text/x-component htc
+	AddType text/x-vcard vcf
+	AddType image/webp webp
+	AddType image/x-icon ico
+	
+</IfModule>
+
+# GZip
+<IfModule mod_filter.c>
+   AddOutputFilterByType DEFLATE text/text text/plain text/html text/xml text/css application/xml application/xhtml+xml application/rss+xml application/javascript application/x-javascript
+</IfModule>

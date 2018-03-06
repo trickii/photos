@@ -1,0 +1,102 @@
+.albums {
+
+    .canvas {
+        display         : flex;
+        flex-direction  : row;
+        flex-wrap       : nowrap;
+        height          : 100%;
+        justify-content : center;
+
+        .album {
+            align-self : center;
+            margin     : 0 0.81vmin;
+            width      : 23.15vmin;
+
+            .box {
+
+                .cover {
+                    border        : 0.51vmin solid #fff;
+                    border-radius : 100%;
+                }
+            }
+            .info {
+                background : rgba(255, 255, 255, 0.5);
+                height     : 500px;
+                left       : 0;
+                top        : calc(100% - 9vmin);
+                transition : opacity 0.2s ease-in;
+                width      : calc(100%);
+
+                .title {
+                    box-sizing  : border-box;
+                    color       : #3a2e52;
+                    font-size   : 2.04vmin;
+                    font-weight : 400;
+                    margin      : 5em 0 1em 0;
+                    line-height : 1.2em;
+                    padding     : 0 0.5em;
+                    text-align  : center;
+                }
+                .description {
+                    color      : #3a2e52;
+                    font-size  : 1.63vmin;
+                    margin     : 0;
+                    padding    : 0 1em;
+                    text-align : center;
+                }
+            }
+
+            @media screen and (min-device-aspect-ratio : 4/3) {
+                margin : 0 0.81vmin;
+                width  : 19vmin;
+            }
+        }
+    }
+    .points {
+        display : none;
+    }
+
+    .notouch & {
+        .canvas {
+            .album {
+                .box {
+                    &:before {
+                        background    : rgba(255, 255, 255, 0.5);
+                        border-radius : 100% 100% 0 0;
+                        display       : block;
+                        content       : '';
+                        height        : 100%;
+                        left          : -0.81vmin;
+                        opacity       : 0;
+                        position      : absolute;
+                        transition    : opacity 0.2s ease-in;
+                        top           : -0.81vmin;
+                        width         : calc(100% + 1.62vmin);
+                    }
+                }
+                .info {
+                    left       : -0.81vmin;
+                    opacity    : 0;
+                    top        : calc(100% - 0.81vmin);
+                    transition : opacity 0.2s ease-in;
+                    width      : calc(100% + 1.62vmin);
+
+                    .title {
+                        margin : 1.5em 0 1em 0;
+                    }
+                }
+                &:hover {
+                    .box {
+                        &:before {
+                            opacity : 1;
+                        }
+                    }
+                    .info {
+                        opacity : 1;
+                    }
+                }
+            }
+        }
+    }
+}
+

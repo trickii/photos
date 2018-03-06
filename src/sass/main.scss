@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Arsenal&subset=cyrillic');
+html {
+    height : 100%;
+}
+body {
+    font-family : 'Arsenal', sans-serif;
+    font-size   : 12px;
+    height      : 100%;
+    margin      : 0;
+    overflow    : hidden;
+}
+header {
+    color    : #fff;
+    display  : grid;
+    position : relative;
+}
+section {
+
+}
+.cnt {
+    display  : grid;
+    height   : 100%;
+    overflow : hidden;
+}
+@import "nav";
+@import "intro";
+@import "albums";
+@import "gallery";
+@import "media/media";

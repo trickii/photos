@@ -1,0 +1,36 @@
+.albums {
+    height   : 100%;
+    position : relative;
+
+    .canvas {
+        .album {
+            position : relative;
+
+            .box {
+                cursor   : pointer;
+                position : relative;
+
+                .cover {
+                    box-sizing : border-box;
+                    display    : block;
+                    height     : auto;
+                    position   : relative;
+                    width      : 100%;
+                    z-index    : 1;
+                }
+            }
+            .info {
+                display   : flex;
+                flex-flow : column;
+                position  : absolute;
+
+                .title {
+
+                }
+                .description {
+
+                }
+            }
+        }
+    }
+}

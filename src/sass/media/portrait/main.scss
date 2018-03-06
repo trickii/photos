@@ -1,0 +1,16 @@
+.cnt {
+    grid-template-rows : 27vmax 53vmax 20vmax;
+}
+header {
+    grid-template-rows : 4.69vmax auto;
+    width              : 100vw;
+}
+section {
+    background : #fff;
+    box-sizing : border-box;
+    padding    : 0.78vmax 0;
+}
+footer {
+    background : transparent url('/images/bg_body.jpg') center top / cover no-repeat scroll;
+    width      : 100vw;
+}

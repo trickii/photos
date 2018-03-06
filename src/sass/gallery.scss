@@ -1,0 +1,221 @@
+@keyframes showimage {
+    0% {
+        opacity : 0;
+    }
+    10% {
+        opacity : 0;
+    }
+    100% {
+        opacity : 1;
+    }
+}
+.gallery {
+    display  : none;
+    height   : 100%;
+    left     : 0;
+    position : absolute;
+    top      : 0;
+    width    : 100%;
+    z-index  : 2;
+
+    .canvas {
+        background : rgb(66, 66, 66);
+        height     : 100%;
+        left       : 0;
+        position   : absolute;
+        top        : 0;
+        width      : 100%;
+
+        .image {
+            background-color    : rgb(66, 66, 66);
+            background-position : center;
+            background-repeat   : no-repeat;
+            height              : 100%;
+            left                : 0;
+            position            : absolute;
+            top                 : 0;
+            width               : 100%;
+
+            .info {
+                background      : rgba(150, 150, 150, 0.7);
+                border-radius   : 1em;
+                bottom          : 3vmin;
+                color           : #fff;
+                display         : flex;
+                font-size       : 2vmin;
+                justify-content : space-around;
+                left            : 50%;
+                padding         : 0.5em 2em;
+                position        : absolute;
+                transform       : translateX(-50%);
+
+                .details {
+                    display         : flex;
+                    flex-wrap       : nowrap;
+                    justify-content : space-between;
+                    width           : 25vmin;
+                }
+            }
+            &:before {
+                background : transparent url('/images/loader.gif') center / cover no-repeat scroll;
+                display    : block;
+                content    : '';
+                height     : 5vmin;
+                left       : 50%;
+                position   : absolute;
+                top        : 50%;
+                transform  : translate3d(-50%, -50%, 0);
+                width      : 5vmin;
+            }
+            &.-loading {
+                background-color : transparent;
+                opacity          : 1;
+            }
+            &.-ready {
+                background-color : rgb(66, 66, 66);
+                opacity          : 0;
+
+                &:before {
+                    display : none;
+                }
+            }
+            &.-show {
+                opacity   : 1;
+                animation : showimage 0.5s 1;
+            }
+            &:last-child {
+                z-index : 2;
+
+            }
+        }
+    }
+    .images {
+        align-content   : center;
+        background      : rgba(66, 66, 66, 0.85);
+        box-sizing      : border-box;
+        display         : none;
+        flex-wrap       : wrap;
+        justify-content : center;
+        height          : 100%;
+        left            : 0;
+        padding         : 5vmin;
+        position        : fixed;
+        top             : 0;
+        width           : 100%;
+        z-index         : 3;
+
+        .image {
+            cursor   : pointer;
+            height   : 20vmin;
+            margin   : 2vmin;
+            overflow : hidden;
+            width    : 20vmin;
+
+            img {
+                display : block;
+            }
+            &.landscape {
+                img {
+                    height    : 100%;
+                    left      : 50%;
+                    position  : relative;
+                    transform : translateX(-50%);
+                    width     : auto;
+
+                }
+            }
+            &.portrait {
+                img {
+                    height    : auto;
+                    top       : 50%;
+                    position  : relative;
+                    transform : translateY(-50%);
+                    width     : 100%;
+                }
+            }
+        }
+        .button {
+            &.back {
+                background-image : url('/images/icon_prev.svg');
+                background-size  : 55%;
+                top              : 3vmin;
+                position         : absolute;
+                right            : 2vmin;
+                z-index          : 3;
+            }
+        }
+
+        &.-show {
+            display : flex;
+        }
+    }
+    .buttons {
+        display         : flex;
+        flex-flow       : column;
+        justify-content : flex-start;
+        top             : 3vmin;
+        position        : absolute;
+        right           : 2vmin;
+        z-index         : 3;
+
+        .button {
+            &.back {
+                background-image : url('/images/icon_prev.svg');
+                background-size  : 55%;
+            }
+            &.list {
+                background-image : url('/images/icon_gallery.svg');
+            }
+            &.fullscreen {
+                background-image : url('/images/icon_fullscreen.svg');
+            }
+        }
+    }
+    .button {
+        background    : rgba(150, 150, 150, 0.3) center center/auto 70% no-repeat scroll;
+        border-radius : 100%;
+        color         : #fff;
+        cursor        : pointer;
+        height        : 8vmin;
+        font-size     : 2vmin;
+        margin        : 0 0 2vmin 0;
+        padding       : 0;
+        text-indent   : -9999px;
+        width         : 8vmin;
+
+        &.prev,
+        &.next {
+            background : rgba(150, 150, 150, 0.7) center center/auto 100% no-repeat scroll;
+            bottom     : 3vmin;
+            height     : 2.6vmin;
+            margin     : 0;
+            position   : absolute;
+            width      : 2.4vmin;
+            z-index    : 3;
+        }
+        &.prev {
+            align-self          : flex-start;
+            background-image    : url('/images/icon_prev.svg');
+            background-position : 1em center;
+            border-radius       : 0 1em 1em 0;
+            left                : 0;
+            padding             : 0.5em 4em 0.5em 0;
+        }
+        &.next {
+            align-self          : flex-end;
+            background-image    : url('/images/icon_next.svg');
+            background-position : 2em center;
+            border-radius       : 1em 0 0 1em;
+            padding             : 0.5em 0 0.5em 4em;
+            right               : 0;
+        }
+
+        &.-hide {
+            display : none;
+        }
+    }
+
+    &.-show {
+        display : block;
+    }
+}
