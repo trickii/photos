@@ -13,9 +13,9 @@ const ppDataAlbums = [
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
-                    'fnumber': '4.0',
-                    'exposuretime': '1/125',
-                    'isospeed': '800'
+                    'fnumber': '8.0',
+                    'exposuretime': '1/250',
+                    'isospeed': '200'
                 }
             },
             {
@@ -24,9 +24,9 @@ const ppDataAlbums = [
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
-                    'fnumber': '2.0',
-                    'exposuretime': '1/200',
-                    'isospeed': '400'
+                    'fnumber': '5.6',
+                    'exposuretime': '1/1000',
+                    'isospeed': '100'
                 }
             },
             {
@@ -35,9 +35,9 @@ const ppDataAlbums = [
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
-                    'fnumber': '1.4',
-                    'exposuretime': '1/125',
-                    'isospeed': '800'
+                    'fnumber': '9.0',
+                    'exposuretime': '1/320',
+                    'isospeed': '100'
                 }
             },
             {
@@ -46,9 +46,9 @@ const ppDataAlbums = [
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
-                    'fnumber': '4.0',
-                    'exposuretime': '1/125',
-                    'isospeed': '800'
+                    'fnumber': '-',
+                    'exposuretime': '-',
+                    'isospeed': '-'
                 }
             },
             {
@@ -59,7 +59,7 @@ const ppDataAlbums = [
                     'orientation': 'landscape',
                     'fnumber': '4.0',
                     'exposuretime': '1/125',
-                    'isospeed': '800'
+                    'isospeed': '500'
                 }
             },
             {
@@ -68,9 +68,9 @@ const ppDataAlbums = [
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
-                    'fnumber': '4.0',
-                    'exposuretime': '1/125',
-                    'isospeed': '800'
+                    'fnumber': '14.0',
+                    'exposuretime': '1/100',
+                    'isospeed': '100'
                 }
             },
             {
@@ -79,9 +79,9 @@ const ppDataAlbums = [
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
-                    'fnumber': '4.0',
+                    'fnumber': '8.0',
                     'exposuretime': '1/125',
-                    'isospeed': '800'
+                    'isospeed': '200'
                 }
             },
             {
@@ -101,9 +101,9 @@ const ppDataAlbums = [
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
-                    'fnumber': '4.0',
-                    'exposuretime': '1/125',
-                    'isospeed': '800'
+                    'fnumber': '4.5',
+                    'exposuretime': '1/200',
+                    'isospeed': '160'
                 }
             }
         ]
@@ -480,6 +480,39 @@ const ppDataAlbums = [
                     'fnumber': '1.4',
                     'exposuretime': '1/125',
                     'isospeed': '250'
+                }
+            },
+            {
+                'hash': 'image12',
+                'src': 'images/albums/4/image-12.jpg',
+                'exif': {
+                    'model': 'Canon 6D',
+                    'orientation': 'portrait',
+                    'fnumber': '2,0',
+                    'exposuretime': '1/180',
+                    'isospeed': '100'
+                }
+            },
+            {
+                'hash': 'image13',
+                'src': 'images/albums/4/image-13.jpg',
+                'exif': {
+                    'model': 'Canon 6D',
+                    'orientation': 'portrait',
+                    'fnumber': '2,8',
+                    'exposuretime': '1/180',
+                    'isospeed': '100'
+                }
+            },
+            {
+                'hash': 'image14',
+                'src': 'images/albums/4/image-14.jpg',
+                'exif': {
+                    'model': 'Canon 6D',
+                    'orientation': 'landscape',
+                    'fnumber': '2,8',
+                    'exposuretime': '1/180',
+                    'isospeed': '100'
                 }
             }
         ]

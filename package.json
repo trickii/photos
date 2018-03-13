@@ -9,7 +9,6 @@
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-babel": "^7.0.1",
     "gulp-cli": "^2.0.1",
@@ -23,5 +22,8 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
     "merge-stream": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }

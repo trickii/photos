@@ -60,12 +60,12 @@
                 background : transparent url('/images/loader.gif') center / cover no-repeat scroll;
                 display    : block;
                 content    : '';
-                height     : 5vmin;
+                height     : 10vmin;
                 left       : 50%;
                 position   : absolute;
                 top        : 50%;
                 transform  : translate3d(-50%, -50%, 0);
-                width      : 5vmin;
+                width      : 10vmin;
             }
             &.-loading {
                 background-color : transparent;

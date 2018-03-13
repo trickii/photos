@@ -176,7 +176,7 @@ class Gallery {
             listImg.classList.add('image');
             listImg.classList.add(img.exif.orientation);
             listImg.setAttribute('data-hash', img.hash);
-            listImg.addEventListener('click', () => {
+            listImg.addEventListener('click', function() {
                 self.goto(this.getAttribute('data-hash'));
                 self.hideList();
             });
