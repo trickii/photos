@@ -48,7 +48,7 @@ class Gallery {
                     }
                 } else {
                     if (yDiff > 0) {
-                        /* up swipe */
+                        window.location.hash = '#';
                     } else {
                         /* down swipe */
                     }
