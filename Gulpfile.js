@@ -2,7 +2,6 @@ const gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     babel = require('gulp-babel'),
     concat = require('gulp-concat'),
-    // jshint = require('gulp-jshint'),
     imagemin = require('gulp-imagemin'),
     imageresize = require('gulp-image-resize'),
     mStream = require('merge-stream'),
@@ -10,7 +9,6 @@ const gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    removeUseStrict = require('gulp-remove-use-strict'),
     uglify = require('gulp-uglify')
 ;
 
@@ -79,7 +77,6 @@ gulp.task('scripts', function () {
 
     return gulp.src(folders.src)
         .pipe(sourcemaps.init())
-        // .pipe(removeUseStrict())
         .pipe(babel({presets: ['env']}))
         .pipe(concat(folders.dest))
         .pipe(uglify(uglifyConfig))
