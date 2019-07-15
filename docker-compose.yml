@@ -1,0 +1,33 @@
+version: '3.5'
+
+services:
+  apache:
+    build:
+      context: .docker/apache
+      args:
+        PROJECT_WORKDIR: ${PROJECT_WORKDIR}
+    container_name: photos-apache
+    ports:
+      - ${PORT_APACHE}:80
+      - ${PORT_APACHE_SSL}:443
+    volumes:
+      - ./var/logs/apache/:/var/log/apache
+      - ./.docker/apache/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./.docker/apache/conf/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf
+      - ${PROJECT_PATH}:${PROJECT_WORKDIR}:cached
+    env_file: .env
+
+  node:
+    build:
+      context: .docker/node
+      args:
+        PROJECT_WORKDIR: ${PROJECT_WORKDIR}
+        USER_ID: ${USER_ID}
+        GROUP_ID: ${GROUP_ID}
+    container_name: photos-node
+    user: "${USER_ID}:${GROUP_ID}"
+    tty: true
+    volumes:
+      - ${YARN_PATH}:/home/arthurdent/.cache
+      - ${PROJECT_PATH}:${PROJECT_WORKDIR}:cached
+    env_file: .env
