@@ -12,8 +12,7 @@ const gulp = require('gulp'),
     uglify = require('gulp-uglify')
 ;
 
-gulp.task('images', function () {
-
+function images() {
     const folders = {
         src: ['data/**/*.jpg', 'src/images/**/*'],
         dest: 'images/'
@@ -25,12 +24,14 @@ gulp.task('images', function () {
     };
 
     return gulp.src(folders.src)
-        .pipe(newer(folders.dest))
-        .pipe(imagemin(imageminConfig))
-        .pipe(gulp.dest(folders.dest));
-});
+    .pipe(newer(folders.dest))
+    .pipe(imagemin(imageminConfig))
+    .pipe(gulp.dest(folders.dest));
+}
 
-gulp.task('favicon', function () {
+exports.images = images;
+
+function favicon() {
 
     const folders = {
         src: 'src/images/favicon.png',
@@ -45,21 +46,23 @@ gulp.task('favicon', function () {
         let size = folders.sizes[i];
         let fname = folders.filename.replace('%s', size).replace('%s', size);
         let st = gulp.src(folders.src)
-            .pipe(imageresize({
-                width: size,
-                height: size,
-                crop: false
-            }))
-            .pipe(rename(fname))
-            .pipe(gulp.dest(folders.dest));
+        .pipe(imageresize({
+            width: size,
+            height: size,
+            crop: false
+        }))
+        .pipe(rename(fname))
+        .pipe(gulp.dest(folders.dest));
 
         stream.add(st);
     }
 
     return stream.isEmpty() ? null : stream;
-});
+}
 
-gulp.task('scripts', function () {
+exports.favicon = favicon;
+
+function scripts() {
 
     const folders = {
         src: ['data/*.js', 'src/js/**/*.js'],
@@ -76,15 +79,17 @@ gulp.task('scripts', function () {
     };
 
     return gulp.src(folders.src)
-        .pipe(sourcemaps.init())
-        .pipe(babel({presets: ['env']}))
-        .pipe(concat(folders.dest))
-        .pipe(uglify(uglifyConfig))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('.'));
-});
+    .pipe(sourcemaps.init())
+    .pipe(babel({presets: ['env']}))
+    .pipe(concat(folders.dest))
+    .pipe(uglify(uglifyConfig))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('.'));
+}
 
-gulp.task('sass', function () {
+exports.scripts = scripts;
+
+function css() {
 
     const folders = {
         src: 'src/sass/main.scss',
@@ -95,11 +100,16 @@ gulp.task('sass', function () {
     };
 
     return st = gulp.src(folders.src)
-        .pipe(sourcemaps.init())
-        .pipe(sass(sassConfig).on('error', sass.logError))
-        .pipe(autoprefixer())
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('css'));
-});
+    .pipe(sourcemaps.init())
+    .pipe(sass(sassConfig).on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('css'));
+}
 
-gulp.task('default', ['sass', 'scripts', 'images']);
+exports.css = css;
+
+gulp.task('default', gulp.series(css, scripts, images, (done) => {
+    done();
+}));
+
