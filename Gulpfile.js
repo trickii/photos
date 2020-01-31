@@ -9,7 +9,8 @@ const gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    uglify = require('gulp-uglify')
+    uglify = require('gulp-uglify'),
+    webp = require('gulp-webp')
 ;
 
 function images() {
@@ -23,9 +24,15 @@ function images() {
         interlaced: false
     };
 
+    const webpConfig = {
+        preset: 'photo',
+        quality: 75
+    };
+
     return gulp.src(folders.src)
     .pipe(newer(folders.dest))
-    .pipe(imagemin(imageminConfig))
+    // .pipe(imagemin(imageminConfig))
+    .pipe(webp(webpConfig))
     .pipe(gulp.dest(folders.dest));
 }
 

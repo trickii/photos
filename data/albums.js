@@ -4,12 +4,12 @@ const ppDataAlbums = [
     {
         'title': 'album_1_title',
         'description': 'album_1_description',
-        'cover': 'images/albums/1/cover.jpg',
+        'cover': 'images/albums/1/cover.webp',
         'hash': 'album1',
         'images': [
             {
                 'hash': 'image1',
-                'src': 'images/albums/1/image-1.jpg',
+                'src': 'images/albums/1/image-1.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -20,7 +20,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image2',
-                'src': 'images/albums/1/image-2.jpg',
+                'src': 'images/albums/1/image-2.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -31,7 +31,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image3',
-                'src': 'images/albums/1/image-3.jpg',
+                'src': 'images/albums/1/image-3.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -42,7 +42,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image4',
-                'src': 'images/albums/1/image-4.jpg',
+                'src': 'images/albums/1/image-4.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -53,7 +53,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image5',
-                'src': 'images/albums/1/image-5.jpg',
+                'src': 'images/albums/1/image-5.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -64,7 +64,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image6',
-                'src': 'images/albums/1/image-6.jpg',
+                'src': 'images/albums/1/image-6.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -75,7 +75,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image7',
-                'src': 'images/albums/1/image-7.jpg',
+                'src': 'images/albums/1/image-7.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -86,7 +86,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image8',
-                'src': 'images/albums/1/image-8.jpg',
+                'src': 'images/albums/1/image-8.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -97,7 +97,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image9',
-                'src': 'images/albums/1/image-9.jpg',
+                'src': 'images/albums/1/image-9.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -111,12 +111,12 @@ const ppDataAlbums = [
     {
         'title': 'album_2_title',
         'description': 'album_2_description',
-        'cover': 'images/albums/2/cover.jpg',
+        'cover': 'images/albums/2/cover.webp',
         'hash': 'album2',
         'images': [
             {
                 'hash': 'image1',
-                'src': 'images/albums/2/image-1.jpg',
+                'src': 'images/albums/2/image-1.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -127,7 +127,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image2',
-                'src': 'images/albums/2/image-2.jpg',
+                'src': 'images/albums/2/image-2.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'portrait',
@@ -138,7 +138,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image3',
-                'src': 'images/albums/2/image-3.jpg',
+                'src': 'images/albums/2/image-3.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -149,7 +149,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image4',
-                'src': 'images/albums/2/image-4.jpg',
+                'src': 'images/albums/2/image-4.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -160,7 +160,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image5',
-                'src': 'images/albums/2/image-5.jpg',
+                'src': 'images/albums/2/image-5.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -171,7 +171,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image6',
-                'src': 'images/albums/2/image-6.jpg',
+                'src': 'images/albums/2/image-6.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -182,7 +182,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image7',
-                'src': 'images/albums/2/image-7.jpg',
+                'src': 'images/albums/2/image-7.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -193,7 +193,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image8',
-                'src': 'images/albums/2/image-8.jpg',
+                'src': 'images/albums/2/image-8.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -204,7 +204,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image9',
-                'src': 'images/albums/2/image-9.jpg',
+                'src': 'images/albums/2/image-9.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -215,7 +215,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image10',
-                'src': 'images/albums/2/image-10.jpg',
+                'src': 'images/albums/2/image-10.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -229,12 +229,12 @@ const ppDataAlbums = [
     {
         'title': 'album_3_title',
         'description': 'album_3_description',
-        'cover': 'images/albums/3/cover.jpg',
+        'cover': 'images/albums/3/cover.webp',
         'hash': 'album3',
         'images': [
             {
                 'hash': 'image1',
-                'src': 'images/albums/3/image-1.jpg',
+                'src': 'images/albums/3/image-1.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -245,7 +245,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image2',
-                'src': 'images/albums/3/image-2.jpg',
+                'src': 'images/albums/3/image-2.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -256,7 +256,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image3',
-                'src': 'images/albums/3/image-3.jpg',
+                'src': 'images/albums/3/image-3.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -267,7 +267,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image4',
-                'src': 'images/albums/3/image-4.jpg',
+                'src': 'images/albums/3/image-4.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'portrait',
@@ -278,7 +278,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image5',
-                'src': 'images/albums/3/image-5.jpg',
+                'src': 'images/albums/3/image-5.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -289,7 +289,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image6',
-                'src': 'images/albums/3/image-6.jpg',
+                'src': 'images/albums/3/image-6.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -300,7 +300,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image7',
-                'src': 'images/albums/3/image-7.jpg',
+                'src': 'images/albums/3/image-7.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -311,7 +311,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image8',
-                'src': 'images/albums/3/image-8.jpg',
+                'src': 'images/albums/3/image-8.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'portrait',
@@ -322,7 +322,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image9',
-                'src': 'images/albums/3/image-9.jpg',
+                'src': 'images/albums/3/image-9.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -333,7 +333,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image10',
-                'src': 'images/albums/3/image-10.jpg',
+                'src': 'images/albums/3/image-10.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -344,7 +344,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image11',
-                'src': 'images/albums/3/image-11.jpg',
+                'src': 'images/albums/3/image-11.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -358,12 +358,12 @@ const ppDataAlbums = [
     {
         'title': 'album_4_title',
         'description': 'album_4_description',
-        'cover': 'images/albums/4/cover.jpg',
+        'cover': 'images/albums/4/cover.webp',
         'hash': 'album4',
         'images': [
             {
                 'hash': 'image1',
-                'src': 'images/albums/4/image-1.jpg',
+                'src': 'images/albums/4/image-1.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -374,7 +374,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image2',
-                'src': 'images/albums/4/image-2.jpg',
+                'src': 'images/albums/4/image-2.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -385,7 +385,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image3',
-                'src': 'images/albums/4/image-3.jpg',
+                'src': 'images/albums/4/image-3.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -396,7 +396,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image4',
-                'src': 'images/albums/4/image-4.jpg',
+                'src': 'images/albums/4/image-4.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -407,7 +407,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image5',
-                'src': 'images/albums/4/image-5.jpg',
+                'src': 'images/albums/4/image-5.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -418,7 +418,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image6',
-                'src': 'images/albums/4/image-6.jpg',
+                'src': 'images/albums/4/image-6.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -429,7 +429,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image7',
-                'src': 'images/albums/4/image-7.jpg',
+                'src': 'images/albums/4/image-7.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -440,7 +440,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image8',
-                'src': 'images/albums/4/image-8.jpg',
+                'src': 'images/albums/4/image-8.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -451,7 +451,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image9',
-                'src': 'images/albums/4/image-9.jpg',
+                'src': 'images/albums/4/image-9.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -462,7 +462,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image10',
-                'src': 'images/albums/4/image-10.jpg',
+                'src': 'images/albums/4/image-10.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -473,7 +473,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image11',
-                'src': 'images/albums/4/image-11.jpg',
+                'src': 'images/albums/4/image-11.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'portrait',
@@ -484,7 +484,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image12',
-                'src': 'images/albums/4/image-12.jpg',
+                'src': 'images/albums/4/image-12.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'portrait',
@@ -495,7 +495,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image13',
-                'src': 'images/albums/4/image-13.jpg',
+                'src': 'images/albums/4/image-13.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'portrait',
@@ -506,7 +506,7 @@ const ppDataAlbums = [
             },
             {
                 'hash': 'image14',
-                'src': 'images/albums/4/image-14.jpg',
+                'src': 'images/albums/4/image-14.webp',
                 'exif': {
                     'model': 'Canon 6D',
                     'orientation': 'landscape',
@@ -520,26 +520,26 @@ const ppDataAlbums = [
     {
         'title': 'album_5_title',
         'description': 'album_5_description',
-        'cover': 'images/albums/5/cover.jpg',
+        'cover': 'images/albums/5/cover.webp',
         'hash': 'album5',
         'images': [
             {
                 'hash': 'image1',
-                'src': 'images/albums/5/image-1.jpg',
+                'src': 'images/albums/5/image-1.webp',
                 'exif': {
                     'orientation': 'landscape'
                 }
             },
             {
                 'hash': 'image2',
-                'src': 'images/albums/5/image-2.jpg',
+                'src': 'images/albums/5/image-2.webp',
                 'exif': {
                     'orientation': 'landscape'
                 }
             },
             {
                 'hash': 'image3',
-                'src': 'images/albums/5/image-3.jpg',
+                'src': 'images/albums/5/image-3.webp',
                 'exif': {
                     'orientation': 'landscape'
                 }
@@ -549,61 +549,61 @@ const ppDataAlbums = [
     {
         'title': 'album_6_title',
         'description': 'album_6_description',
-        'cover': 'images/albums/6/cover.jpg',
+        'cover': 'images/albums/6/cover.webp',
         'hash': 'album6',
         'images': [
             {
                 'hash': 'image1',
-                'src': 'images/albums/6/image-1.jpg',
+                'src': 'images/albums/6/image-1.webp',
                 'exif': {
                     'orientation': 'landscape'
                 }
             },
             {
                 'hash': 'image2',
-                'src': 'images/albums/6/image-2.jpg',
+                'src': 'images/albums/6/image-2.webp',
                 'exif': {
                     'orientation': 'landscape'
                 }
             },
             {
                 'hash': 'image3',
-                'src': 'images/albums/6/image-3.jpg',
+                'src': 'images/albums/6/image-3.webp',
                 'exif': {
                     'orientation': 'landscape'
                 }
             },
             {
                 'hash': 'image4',
-                'src': 'images/albums/6/image-4.jpg',
+                'src': 'images/albums/6/image-4.webp',
                 'exif': {
                     'orientation': 'landscape'
                 }
             },
             {
                 'hash': 'image5',
-                'src': 'images/albums/6/image-5.jpg',
+                'src': 'images/albums/6/image-5.webp',
                 'exif': {
                     'orientation': 'landscape'
                 }
             },
             {
                 'hash': 'image6',
-                'src': 'images/albums/6/image-6.jpg',
+                'src': 'images/albums/6/image-6.webp',
                 'exif': {
                     'orientation': 'landscape'
                 }
             },
             {
                 'hash': 'image7',
-                'src': 'images/albums/6/image-7.jpg',
+                'src': 'images/albums/6/image-7.webp',
                 'exif': {
                     'orientation': 'landscape'
                 }
             },
             {
                 'hash': 'image8',
-                'src': 'images/albums/6/image-8.jpg',
+                'src': 'images/albums/6/image-8.webp',
                 'exif': {
                     'orientation': 'landscape'
                 }

@@ -12,6 +12,7 @@
         .icon {
             background : transparent center / contain no-repeat scroll;
             display    : block;
+            text-indent: 9999px;
 
             & + .icon {
                 margin : auto auto auto 2vmin;
@@ -31,7 +32,7 @@
                 background-size  : 140%;
             }
             &.vk {
-                background-image : url('/images/icon_vk.png');
+                background-image : url('/images/icon_vk.webp');
                 background-size  : 90%;
             }
         }

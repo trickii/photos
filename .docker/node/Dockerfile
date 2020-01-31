@@ -16,7 +16,10 @@ RUN apk update \
        nasm \
        zlib \
        libpng-dev \
+       jpeg-dev \
+       libjpeg-turbo-dev \
        libjpeg-turbo-utils \
+       graphicsmagick \
        python \
 # git for fe-framework checkout
        git

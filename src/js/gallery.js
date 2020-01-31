@@ -58,8 +58,8 @@ class Gallery {
                 yDown = null;
             };
 
-            this.cnt.addEventListener('touchstart', handleTouchStart, false);
-            this.cnt.addEventListener('touchmove', handleTouchMove, false);
+            this.cnt.addEventListener('touchstart', handleTouchStart, {passive: true});
+            this.cnt.addEventListener('touchmove', handleTouchMove, {passive: true});
         } else {
             window.addEventListener('keyup', (e) => {
                 if (this.state) {

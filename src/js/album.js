@@ -53,8 +53,8 @@ class Album {
                 yDown = null;
             };
 
-            this.cnt.addEventListener('touchstart', handleTouchStart, false);
-            this.cnt.addEventListener('touchmove', handleTouchMove, false);
+            this.cnt.addEventListener('touchstart', handleTouchStart, {passive: true});
+            this.cnt.addEventListener('touchmove', handleTouchMove, {passive: true});
         } else {
             window.addEventListener('keypress', (e) => {
                 switch (e.keyCode) {

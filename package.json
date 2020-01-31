@@ -15,12 +15,13 @@
     "gulp-babel": "^7.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-image-resize": "^0.13.1",
-    "gulp-imagemin": "^6.0.0",
+    "gulp-imagemin": "^6.2.0",
     "gulp-newer": "^1.4.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
     "merge-stream": "^2.0.0"
   }
 }
